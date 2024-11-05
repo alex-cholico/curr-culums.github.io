@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C2F33; /* Color oscuro cálido */
+    color: #FFFFFF; /* Color de texto claro */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    background: linear-gradient(90deg, #232526, #10302B); /* Degradado tornasol oscuro */
+
+}
+
+.top-button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: transparent; /* Botón transparente */
+    border: 1px ; #FFFFFF; /* Borde blanco para más visibilidad */
+    color: white;
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer;
+}
+
+.top-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente visible al pasar el mouse */
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 30px); /* Ajusta al tamaño restante de la ventana */
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #23272A; /* Color más oscuro para la barra lateral */
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: 85%;
+    padding: 20px;
+    background-color: #2C2F33;
+    overflow-y: auto;
+}
+
+.document {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.document img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ffffff;
+}
+
+
+.img { 
+    justify-content: right;
+    position: relative;
+    opacity: 0.3;
+}   
+documento-iframe {
+    height: auto;
+}

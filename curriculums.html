@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculums</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function abrirDocumento(pdfUrl) {
+            document.getElementById('documento-iframe').src = pdfUrl;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="conalep.png" alt="" width="75"  height="40">
+            <button class="top-button">R.A.2.2:</button>
+            <button class="top-button">using...</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="abrirDocumento('Practica 2 Inter VLAN Routing.pdf')">Portada</a></li>
+                <li><a href="#" onclick="abrirDocumento('Curriculum_Andrea.pdf')">Curriculum Andrea</a></li>
+                <li><a href="#" onclick="abrirDocumento('Curriculum_Cholico.pdf')">Curriculum Cholico</a></li>
+                <li><a href="#" onclick="abrirDocumento('Curriculum_Ricardo.pdf')">Curriculum Ricardo</a></li>
+                <li><a href="#" onclick="abrirDocumento('Curriculum_Fernanda.pdf')">Curriculum Fernanda</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="document">
+                <iframe id="documento-iframe" src="" width="100%" height="585px" style="border: none;"></iframe>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
